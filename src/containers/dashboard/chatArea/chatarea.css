@@ -1,0 +1,167 @@
+.chat_area_container {
+  width: 50vw;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduce_yourself_box {
+  border: 1px solid #bcc1caff;
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding: 15px 32px;
+}
+
+.user_info {
+  display: flex;
+  gap: 8px;
+}
+
+.user_info_input {
+  border: none;
+  outline: none;
+  color: #6e7787ff;
+  font-size: 12px;
+  width: 50%;
+  background-color: transparent;
+}
+
+.edit_user_info {
+  cursor: pointer;
+  color: #171a1fff;
+}
+
+.edit_user_info:hover {
+  color: #000000;
+}
+.ai_chat_rectangle {
+  float: left;
+  border: 1px solid #12a9bcff;
+  border-radius: 3px;
+  padding: 15px 24px;
+  margin: 7px 40px 7px auto;
+}
+
+.ai_chat_rectangle_top {
+  display: flex;
+  gap: 8px;
+  color: #0095a9ff;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.chat_icon {
+  width: 38px;
+  height: 28px;
+}
+
+.ai_chat_rectangle_bottom_row {
+  float: right;
+  display: flex;
+  gap: 16px;
+}
+
+.ai_chat_rectangle_bottom_icon {
+  width: 20px;
+  height: 20px;
+  color: #00454fff;
+}
+
+.user_chat_rectangle {
+  display: flex;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #12a9bcff;
+  padding: 15px 24px;
+  border-radius: 3px;
+  gap: 8px;
+  float: right;
+  margin: 7px auto;
+}
+
+.query_input_container {
+  background-color: #fffffffc;
+  border: 1px solid #bcc1caff;
+  border-radius: 3px;
+  color: #0095a9ff;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 24px;
+  align-items: center;
+}
+
+.query_input_left {
+  display: flex;
+  gap: 23px;
+  width: 100%;
+}
+
+.question_icon {
+  width: 28px;
+  height: 28px;
+}
+
+.query_input_box {
+  border: none;
+  outline: none;
+  color: #0095a9ff;
+  width: 100%;
+}
+
+.query_input_box::placeholder {
+  color: #0095a9ff;
+}
+
+.send_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.next_question_text {
+  color: #171a1fff;
+  font-size: 8px;
+  line-height: 14px;
+  margin: 32px;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 1100px) {
+  .user_info_input {
+    max-width: 15ch;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 620px) {
+    .chat_area_container{
+        width: 100%;
+        height: 80vh;
+    }
+  .introduce_yourself_box {
+    text-align: center;
+  }
+
+  .user_info {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chat_icon{
+    display: none;
+  }
+
+  .question_icon{
+    display: none;
+  }
+
+  .ai_chat_rectangle_bottom_row{
+    margin: 5px 0;
+  }
+
+
+}

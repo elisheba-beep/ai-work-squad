@@ -1,0 +1,10 @@
+.new_chat_box {
+    border: 1px solid #8191c9ff;
+    color: #8191c9ff;
+    background-color: #ffffff;
+    border-radius: 2.25px;
+    text-align: center;
+    padding: 9px;
+    font-size: 12px;
+    cursor: pointer;
+  }

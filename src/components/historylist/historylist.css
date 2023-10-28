@@ -1,0 +1,58 @@
+.history_list {
+  color: #171a1fff;
+}
+
+.history_tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+  margin: 14px 0;
+}
+
+.history_tile:hover {
+  cursor: pointer;
+}
+
+.history_tile_left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.history_tile_text {
+  max-width: 15ch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.history_tile_right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.history_tile_text_full {
+  position: absolute;
+  z-index: 1;
+}
+.history_tile_text_full_arrow {
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  font-weight: bold;
+}
+
+.history_tile_text_full_container {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  text-align: center;
+}

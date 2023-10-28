@@ -1,0 +1,11 @@
+
+.avatarIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.dashboard_body {
+  display: flex;
+  gap: 28px;
+  padding: 21px 13px;
+}

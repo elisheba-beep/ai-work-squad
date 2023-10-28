@@ -1,0 +1,74 @@
+.breadcrumb {
+  display: flex;
+  background-color: #0095a9;
+  padding: 6px 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.breadcrumb_right {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  gap: 25px;
+  margin-right: 44px;
+}
+
+.departmentBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  padding: 9px 50px;
+  font-weight: bold;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.department_dropdown {
+  position: absolute;
+  top: 45px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #bcc1caff;
+  border-radius: 6px;
+  padding: 9px 50px;
+  width: 125px;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  gap: 4px;
+}
+
+.avatarIcon {
+  width: 15px;
+  height: 15px;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 620px) {
+  .departmentBox {
+    display: block;
+    text-align: center;
+  }
+
+  .department_dropdown {
+    width: 70px;
+    top: 55px;
+  }
+
+  .breadcrumb_right {
+    margin-right: 20px;
+  }
+}
