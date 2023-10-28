@@ -76,7 +76,9 @@
   border-radius: 3px;
   gap: 8px;
   float: right;
-  margin: 7px auto;
+  margin: 7px auto 7px 40px;
+  font-size: 14px;
+  align-items: center;
 }
 
 .query_input_container {
@@ -138,10 +140,10 @@
 }
 
 @media screen and (max-width: 620px) {
-    .chat_area_container{
-        width: 100%;
-        height: 80vh;
-    }
+  .chat_area_container {
+    width: 100%;
+    height: 80vh;
+  }
   .introduce_yourself_box {
     text-align: center;
   }
@@ -151,17 +153,15 @@
     align-items: center;
   }
 
-  .chat_icon{
+  .chat_icon {
     display: none;
   }
 
-  .question_icon{
+  .question_icon {
     display: none;
   }
 
-  .ai_chat_rectangle_bottom_row{
+  .ai_chat_rectangle_bottom_row {
     margin: 5px 0;
   }
-
-
 }

@@ -8,7 +8,6 @@ import { AiOutlineExport } from "react-icons/ai";
 import { GrDocumentDownload } from "react-icons/gr";
 import { useViewport } from "../../../context/viewportContext";
 
-
 interface chatAreaProps {
   department: string;
 }
@@ -18,7 +17,6 @@ export default function ChatArea({ department }: chatAreaProps) {
   const [value, setValue] = useState(
     "I'm Nithin, CEO of an IT startup company in India"
   );
-
 
   const { isMobile } = useViewport();
   return (
@@ -51,12 +49,17 @@ export default function ChatArea({ department }: chatAreaProps) {
           <div className="ai_chat_rectangle_top">
             <PiChatsLight className="chat_icon" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-              molestiae voluptas deleniti mollitia veritatis corporis
-              necessitatibus pariatur expedita optio, iure quasi aliquid
-              reiciendis, commodi culpa possimus itaque omnis eum aliquam.
+              Marketing refers to the process of promoting and selling products
+              or services to customers. It invoives researching customer needs
+              and wants,developing products and services that meet those
+              needs,pricing products and sorvices appropriately.creating
+              markoting materials to promote products and services,and
+              distributing those materials through various channels to reach
+              potential customers.The ultimate goal of marketing is to generate
+              interest and increase sales for a business or organization.
             </p>
           </div>
+          
           <div className="ai_chat_rectangle_bottom_row">
             <FiCopy className="ai_chat_rectangle_bottom_icon" />
             <AiOutlineExport className="ai_chat_rectangle_bottom_icon" />
@@ -64,6 +67,14 @@ export default function ChatArea({ department }: chatAreaProps) {
             <PiEnvelopeSimple className="ai_chat_rectangle_bottom_icon" />
           </div>
         </div>
+        <div className="user_chat_rectangle">
+            <p>
+              Give me a list of top 5 digital marketing agencies near me who
+              offers services like social media marketing, content marketing and
+              influencer marketing
+            </p>
+            <PiSealQuestion className="question_icon" />
+          </div>
       </div>
 
       <div>
@@ -72,7 +83,7 @@ export default function ChatArea({ department }: chatAreaProps) {
           <div className="query_input_left">
             <PiSealQuestion className="question_icon" />
             <input
-              placeholder={isMobile ? `${department} query...` : `Enter your ${department.toLowerCase()} query here...`}
+              placeholder={`Enter your ${department.toLowerCase()} query here...`}
               className="query_input_box"
             />
           </div>
